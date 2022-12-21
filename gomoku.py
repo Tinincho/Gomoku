@@ -10,9 +10,9 @@ O = "O"
 E = None
 
 # Global atributtes.
-board_width = 6
-board_heigth = 6
-match_number = 5
+board_width = 3
+board_heigth = 3
+match_number = 3
 last_action = (0, 0)
 last_player = E
 """
@@ -174,7 +174,7 @@ def minimax(board):
     if terminal(board) == True:
         return None
 
-    total_depth = 2
+    total_depth = 5
     value = 0
     move = set()
 
